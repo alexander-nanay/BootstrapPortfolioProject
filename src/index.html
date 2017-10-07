@@ -8,40 +8,104 @@
   <title>HTML Portfolio</title>
 </head>
 <body>
+  <nav class='navbar navbar-default'>
+    <div class='container'>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class='navbar-brand'>Alex Nanay</a>
+    </div>
 
-  <!--
-    Previous project placeholder begins
-  -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Learn More About Me</h3>
+          <p>I'm addicted to sleeping</p>
+          <p>I'm good at eating too</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>My skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>Eating</li>
+            <li>Sleeping</li>
+          </ul>
+          <p>It's a pity I can't do latter simultaneously</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Drop me a line</h3>
+          <p>... or not</p>
+          <p><a href='http://www.google.com'>Google</a></p>
+        </div>
+      </div>
+    </div>
   </div>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
+<div class='marketing'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-4'>
+        <span class='glyphicon glyphicon-music'></span>
+        <h2>Listen</h2>
+        <p>to the music</p>
+      </div>
+      <div class='col-md-4'>
+        <span class='glyphicon glyphicon-bed'></span>
+        <h2>Sleep</h2>
+        <p>well</p>
+      </div>
+      <div class='col-md-4'>
+        <span class='glyphicon glyphicon-glass'></span>
+        <h2>Drink</h2>
+        <p>water</p>
+      </div>
+    </div>
   </div>
+</div>
 
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
-
+<footer>
+  <div class="container">
+    <h3>Get in touch with me</h3>
+    <p>...or not</p>
+  <div>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
